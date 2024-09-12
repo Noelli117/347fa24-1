@@ -5,14 +5,13 @@
 // this is a comment! it is valid code but doesn't do anything
 
 /*this is a...
-multi-line commen
+multi-line comment
 REMINDERS FROM this week's README.md
 - Client (Interpreter/Language) boots when you open IDE
 - You do need to boot the Audio Server with <<Command|B>> BUT WE WILL NOT DO THIS QUITE YET
 - You see your I/O in the Post window after booting the Audio Server
 - [You might need to change them/select them with this code](https://doc.sccode.org/Reference/AudioDeviceSelection.html)
 - If you I/O audio rates don't match, the server won't boot and you'll need to make sure they match in your Audio MIDI setup
-- Evaluate a block with <<Shift|Return>> when your cursor is *in* the block
 - Kill what is on the server with <<Command|.>>
 - ***Beware Zombie servers***
 - Everything's in mono by default
@@ -32,7 +31,7 @@ REMINDERS FROM this week's README.md
 
 //////// 3 ////////
 // parentheses make it easy to
-// run multiple lines of code
+// run multiple lines of code with <<command>>+<<return>>
 
 (
 "I love SuperCollider".postln;
@@ -79,7 +78,7 @@ a.value; // .value evaluates the function stored in "a"
 // .postln, .value (evaluate) are messages to function objects included in sclang
 
 
-
+// RACHEL WE ENDED HERE SEPT 5
 
 
 //////// 6 ////////
