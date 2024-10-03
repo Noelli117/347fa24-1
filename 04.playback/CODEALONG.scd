@@ -24,7 +24,7 @@
 	snd=PlayBuf.ar( // PlayBuf will play a sound in a buffer
 		numChannels:2, // we are dealing with stereo samples, so 2 channels
 		bufnum:~buffer, // the buffer
-		/* mess with // rate: -0.5, */
+	    rate: -0.2,
 		loop:1,
 	);
 	Out.ar(0,snd); // send to Out UGen to channel 0 (default speakers)
@@ -107,7 +107,7 @@ SynthDef("musicbox", {
 }).add; // .add will add it to our server to be used anytime we want!
 )
 
-~buffer=Buffer.read(s,thisProcess.nowExecutingPath.dirname++"/whale.wav");
+~buffer=Buffer.read(s,thisProcess.nowExecutingPath.dirname++"/vg4.wav");
 
 x=Synth("musicbox", [\bufnum, ~buffer]); // will start playing
 
@@ -331,7 +331,7 @@ s.waitForBoot({
 
 	Routine {
 		// either load a file into the tape
-		u.loadTape(tape:1,filename:thisProcess.nowExecutingPath.dirname++"/wineglass.wav");
+		u.loadTape(tape:1,filename:thisProcess.nowExecutingPath.dirname++"/vg4.wav");
 		// OR record another tape and play it
 		// u.recordTape(tape:1,seconds:3,recLevel:2); 3.5.wait;
 
